@@ -1,0 +1,132 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="alert.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Welcome to UKK (4x4) Memory Game!</h1>
+        <button id="reload-button" onClick="window.location.reload();"><i class="fa fa-rotate-right"></i></button>
+    </header><br>
+    <nav class="navbar">
+        <div class="left nav-item">No of moves: <span id="moves"></span></div>
+        <div class="left nav-item"> Time Remaining: <span id="timer">00:00</span> </div>
+        <div class="nav-item">
+            <a id="start-game" href="#">Start game</a>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Set Level
+                <i class="fa fa-caret-down" style="display:inline;"></i>
+            </button>
+            <div class="dropdown-content">
+                <a id="easy" href="#">Easy</a>
+                <a id="medium" href="#">Medium</a>
+                <a id="hard" href="#">Hard</a>
+            </div>
+        </div>
+        <div class="nav-item">
+            (<span id="difficulty">Unset</span>)
+        </div>
+    </nav><br>
+    <div class="" id="alert-box">
+
+    </div>
+    <section class="memory-game">
+        <div class="memory-card" data-framework="one">
+            <img class="front-face" src="cards/ashoka.png">
+            <img class="back-face" src="media/logo.png">
+        </div>
+
+        <div class="memory-card" data-framework="one">
+            <img class="front-face" src="cards/ashoka.png">
+            <img class="back-face" src="media/logo.png">
+        </div>
+
+        <div class="memory-card" data-framework="two">
+            <img class="front-face" src="cards/egg.png">
+            <img class="back-face" src="media/logo.png">
+        </div>
+
+        <div class="memory-card" data-framework="two">
+            <img class="front-face" src="cards/egg.png">
+            <img class="back-face" src="media/logo.png">
+        </div>
+
+        <div class="memory-card" data-framework="three">
+            <img class="front-face" src="cards/kaalan.png">
+            <img class="back-face" src="media/logo.png">
+        </div>
+
+        <div class="memory-card" data-framework="three">
+            <img class="front-face" src="cards/kaalan.png">
+            <img class="back-face" src="media/logo.png">
+        </div>
+
+        <div class="memory-card" data-framework="four">
+            <img class="front-face" src="cards/makhani.png">
+            <img class="back-face" src="media/logo.png">
+        </div>
+
+        <div class="memory-card" data-framework="four">
+            <img class="front-face" src="cards/makhani.png">
+            <img class="back-face" src="media/logo.png">
+        </div>
+
+        <div class="memory-card" data-framework="five">
+            <img class="front-face" src="cards/mushroom.png">
+            <img class="back-face" src="media/logo.png">
+        </div>
+
+        <div class="memory-card" data-framework="five">
+            <img class="front-face" src="cards/mushroom.png">
+            <img class="back-face" src="media/logo.png">
+        </div>
+
+        <div class="memory-card" data-framework="six">
+            <img class="front-face" src="cards/nawabi.png">
+            <img class="back-face" src="media/logo.png">
+        </div>
+
+        <div class="memory-card" data-framework="six">
+            <img class="front-face" src="cards/nawabi.png">
+            <img class="back-face" src="media/logo.png">
+        </div>
+
+        <div class="memory-card" data-framework="seven">
+            <img class="front-face" src="cards/poori.png">
+            <img class="back-face" src="media/logo.png">
+        </div>
+
+        <div class="memory-card" data-framework="seven">
+            <img class="front-face" src="cards/poori.png">
+            <img class="back-face" src="media/logo.png">
+        </div>
+
+        <div class="memory-card" data-framework="eight">
+            <img class="front-face" src="cards/rajma.png">
+            <img class="back-face" src="media/logo.png">
+        </div>
+
+        <div class="memory-card" data-framework="eight">
+            <img class="front-face" src="cards/rajma.png">
+            <img class="back-face" src="media/logo.png">
+        </div>
+
+
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

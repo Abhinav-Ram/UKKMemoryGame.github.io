@@ -1,0 +1,84 @@
+.navbar {
+    border-radius: 15px;
+    background: transparent;
+    border: 2px solid darkblue;
+    height: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow: visible;
+}
+
+.navbar>.nav-item {
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 14px 20px;
+    height: 100%;
+}
+
+.navbar>.nav-item>a,
+.navbar>.nav-item {
+    text-decoration: none;
+    color: darkblue;
+}
+
+.navbar>.nav-item>a:hover {
+    text-decoration: underline;
+}
+
+.navbar>.nav-item.left {
+    float: left;
+}
+
+
+
+.dropdown {
+    float: right;
+}
+
+.dropdown .dropbtn {
+    border-radius: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: darkblue;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: transparent;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: red;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    text-decoration: underline;
+}
+
+
+
+.dropdown:hover .dropdown-content {
+
+    border-radius: 15px;
+    display: block;
+}
+
+.start-game:hover {
+    text-decoration: underline;
+}
