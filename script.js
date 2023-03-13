@@ -10,6 +10,10 @@ let timeLeft = 0;
 let isSet = false;
 let isStarted = false;
 
+function capitalize(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 function zoomout() {
     headerEl.classList.remove("visible");
     headerEl.classList.add("hidden");
@@ -134,10 +138,26 @@ function shuffleCards() {
     });
 };
 
+function setLevel(level) {
+    if (isSet === true) {
+        return;
+    }
+    isSet = true;
+    if (level === "easy") {
+        timeLeft = 120;
+    }
+    else if (level === "medium") {
+        timeLeft = 90;
+    }
+    else if (level === "hard") {
+        timeLeft = 60;
+    }
+    document.getElementById("difficulty").innerHTML = capitalize(level);
+}
 
-document.getElementById("easy").addEventListener("click", function () { isSet = true; timeLeft = 120; document.getElementById("difficulty").innerHTML = "Easy"; });
-document.getElementById("medium").addEventListener("click", function () { isSet = true; timeLeft = 90; document.getElementById("difficulty").innerHTML = "Medium"; });
-document.getElementById("hard").addEventListener("click", function () { isSet = true; timeLeft = 60; document.getElementById("difficulty").innerHTML = "Hard"; });
+document.getElementById("easy").addEventListener("click", function () { setLevel("easy"); });
+document.getElementById("medium").addEventListener("click", function () { setLevel("medium"); });
+document.getElementById("hard").addEventListener("click", function () { setLevel("hard"); });
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 document.getElementById("start-game").addEventListener("click", startGame);
